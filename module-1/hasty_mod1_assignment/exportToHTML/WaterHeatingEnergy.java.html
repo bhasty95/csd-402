@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>WaterHeatingEnergy.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+WaterHeatingEnergy.java</font>
+</center></td></tr></table>
+<pre><span class="s0">//Brandon Hasty</span>
+<span class="s0">//3-20-25</span>
+<span class="s0">//M1 Assignment</span>
+<span class="s0">//This codes purpose is to find the energy needed to heat the water.</span>
+
+<span class="s2">import </span><span class="s1">java</span><span class="s3">.</span><span class="s1">util</span><span class="s3">.</span><span class="s1">Scanner</span><span class="s3">; </span><span class="s0">//Scanner is the utility package</span>
+
+<span class="s2">public class </span><span class="s1">WaterHeatingEnergy </span><span class="s3">{</span>
+
+    <span class="s2">public static void </span><span class="s1">main</span><span class="s3">(</span><span class="s1">String</span><span class="s3">[] </span><span class="s1">args</span><span class="s3">) {</span>
+        <span class="s0">//Create scanner input</span>
+        <span class="s1">Scanner input </span><span class="s3">= </span><span class="s2">new </span><span class="s1">Scanner</span><span class="s3">(</span><span class="s1">System</span><span class="s3">.</span><span class="s1">in</span><span class="s3">);</span>
+
+        <span class="s0">//Prompt user to input waterMass</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter the amount of water in Kilograms: &quot;</span><span class="s3">);</span>
+        <span class="s2">double </span><span class="s1">waterMass </span><span class="s3">= </span><span class="s1">input</span><span class="s3">.</span><span class="s1">nextDouble</span><span class="s3">();</span>
+
+        <span class="s0">//Prompt user to input the intial temperature of water</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter the initial temperature of the water in °C: &quot;</span><span class="s3">);</span>
+        <span class="s2">double </span><span class="s1">initialTemperature </span><span class="s3">= </span><span class="s1">input</span><span class="s3">.</span><span class="s1">nextDouble</span><span class="s3">();</span>
+
+        <span class="s0">//Prompt user to input the final temperature of water</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter the final temperature of the water in °C: &quot;</span><span class="s3">);</span>
+        <span class="s2">double </span><span class="s1">finalTemperature </span><span class="s3">= </span><span class="s1">input</span><span class="s3">.</span><span class="s1">nextDouble</span><span class="s3">();</span>
+
+        <span class="s0">// compute for the energy needed</span>
+        <span class="s2">double </span><span class="s1">energy </span><span class="s3">= </span><span class="s1">waterMass </span><span class="s3">* (</span><span class="s1">finalTemperature </span><span class="s3">- </span><span class="s1">initialTemperature</span><span class="s3">) * </span><span class="s5">4184</span><span class="s3">;</span>
+
+        <span class="s0">//Display the outcome</span>
+        <span class="s1">System</span><span class="s3">.</span><span class="s1">out</span><span class="s3">.</span><span class="s1">println</span><span class="s3">(</span><span class="s4">&quot;The energy needed to heat the water is &quot; </span><span class="s3">+ </span><span class="s1">energy </span><span class="s3">+ </span><span class="s4">&quot; Joules &quot;</span><span class="s3">);</span>
+    <span class="s3">}</span>
+<span class="s3">}</span>
+
+<span class="s0">// sources used to help build my code</span>
+<span class="s0">//Liang, Y. D. (2022). Introduction to java programming and Data Structures: Comprehensive Version. Pearson Education Limited.</span></pre>
+</body>
+</html>
